@@ -21,6 +21,22 @@ body {
 	text-align: center;
 }
 
+/* Helpers */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Inital Layout */
 #page {
 	text-align: left;
 	}
@@ -324,7 +340,7 @@ body {
 
 #footer nav {
 	padding: 40px 0 0 0;
-}	
+}
 #footer li {
 	display: inline;
 	list-style: none;
@@ -459,7 +475,7 @@ p img {
 #sidebar ul li img {
 	max-width: 100%;
 }
-/* 
+/*
 #sidebar ul p, #sidebar ul select {
 	margin: 5px 0 8px;
 	}
@@ -493,13 +509,13 @@ End Entry Lists */
 	padding: 5px 3px;
 	text-align: center;
 	}
-	
+
 #sidebar #searchform #s {
 	font-size:16px;
 	padding:5px;
 	width:160px
  }
- 	
+
 /* #sidebar #searchform #s {
 	width: 108px;
 	padding: 2px;
@@ -508,7 +524,7 @@ End Entry Lists */
 /* #sidebar #searchsubmit {
 	padding: 1px;
 	} */
-	
+
 #sidebar #searchsubmit {
 	 background:url(http://history.louisvillehardcore.com/skins/LHXC/SearchButton.png) no-repeat top left;
 	 text-indent:-9999px;
@@ -551,7 +567,7 @@ form.cform input{
 }
 form.cform ol, form.cform ul {
 	margin:0;
-	padding:0;	
+	padding:0;
 }
 form.cform ol li {
 	text-align:left;
@@ -582,7 +598,7 @@ form.cform textarea{
 	-webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15);
 	box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15);
 	vertical-align: top;
-  
+
 }
 form.cform input.smallbox{
   width: 75px;
@@ -650,8 +666,8 @@ form.cform input[type=submit] {
 	text-transform: uppercase;
 	margin:10px 0 10px 350px;
 	width:75px;
-	
-	
+
+
 	-moz-transition: all .3s;
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
@@ -664,7 +680,7 @@ form.cform input[type=submit]:focus {
 	background: #AAA -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.15, rgba(255, 255, 255, 0.9)), color-stop(1, rgba(255, 255, 255, 0.5)));
 	color: #000;
 	text-shadow: 0 1px 0 #FFF;
-	
+
 	-moz-transition: all .3s;
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
@@ -678,20 +694,20 @@ form.cform input[type=submit]:focus {
 }
 
 form.cform legend {
-	display:none;	
+	display:none;
 }
 
 span.reqtxt, span.emailreqtxt {
-	font-size:10px;	
+	font-size:10px;
 	margin-left: 10px;
 }
 
 .entry .success {
-	font-size:14px; 
+	font-size:14px;
 	text-shadow:1px 1px 0 #fff;
-	color: #090;	
+	color: #090;
 }
-	
+
 /* End Form Elements */
 
 
@@ -806,7 +822,7 @@ div.aligncenter {
 
 #banner
 {
-	width: 100%; 
+	width: 100%;
 	/*background-color: #a3b8cc; */
 	/* background-image: url("http://forums.louisvillehardcore.com/styles/LHXC/theme/images/background.gif") repeat-x; top left*/
 	height: 132px;
@@ -818,12 +834,12 @@ div.aligncenter {
 /* New Navigation */
 #global_nav {
 position: relative;
-float: right; 
-height: 36px; 
-width: 600px; 
-padding: 0px 0 0 0; 
-margin: -50px 0 0 0; 
-} 
+float: right;
+height: 36px;
+width: 600px;
+padding: 0px 0 0 0;
+margin: -50px 0 0 0;
+}
 
 
 #global_nav ul li {
@@ -846,7 +862,7 @@ list-style: none;
    padding:0;
                 }
 .nav_slider li.back {
-   width: 9px; 
+   width: 9px;
    height: 30px;
    z-index: 8;
    margin:0;
@@ -867,31 +883,31 @@ overflow: hidden;
 color: #d7eaee;
 font-size: 16px;
 position: relative;
-padding: 6px 15px 6px 15px;  
+padding: 6px 15px 6px 15px;
 
-	transition: all 03s ease; 
-	-moz-transition: all 03s ease; 
-	-o-transition: all 03s ease; 
-	-webkit-transition: all 03s ease; 
-	-ms-transition: all 03s ease; 
+	transition: all 03s ease;
+	-moz-transition: all 03s ease;
+	-o-transition: all 03s ease;
+	-webkit-transition: all 03s ease;
+	-ms-transition: all 03s ease;
  }
 .nav_slider li a:hover, .nav_slider li a:active, .nav_slider li a:visited {
     color: #efefe;
     border: none;
  }
- 
+
  #searchform label {
 	 clear:both;
 	 width:100%;
 	 font-size:14px;
  }
- 
- 
+
+
  /* Shows Calendar */
 /* span.calnk{ padding-bottom:5px; border-bottom:1px solid #4E2F09;}*/
 .calnk a:hover {
          background-position:0 0;
-         text-decoration:none;  
+         text-decoration:none;
          color:#000000;
          border-bottom:1px dotted #000000;
          }
@@ -901,21 +917,21 @@ padding: 6px 15px 6px 15px;
          border-bottom:1px dotted #000000;
         }
     .calnk a {
-        text-decoration:none; 
-        color:#000000; 
+        text-decoration:none;
+        color:#000000;
         border-bottom:1px dotted #000000;
         }
-    .calnk a span { 
-        display:none; 
+    .calnk a span {
+        display:none;
         }
     .calnk a:hover span {
-        color:#333333; 
-        background:#e5e5c5; 
+        color:#333333;
+        background:#e5e5c5;
         display:block;
-        position:absolute; 
-        margin-top:1px; 
-        padding:5px; 
-        width:250px; 
+        position:absolute;
+        margin-top:1px;
+        padding:5px;
+        width:250px;
         z-index:100;
         border-radius:10px;
         -moz-border-radius:10px;
@@ -1006,7 +1022,7 @@ padding: 6px 15px 6px 15px;
         padding:10px 0;
         /* font-family:Times New Roman, Georgia, serif; */
         font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
-        margin-bottom:5px; 
+        margin-bottom:5px;
         clear:right;
      }
      .event-title-break {
@@ -1121,7 +1137,7 @@ ul.upcoming li .event {
 	height:0;
 	content:".";
 	}
-	
+
 .clearfloat {
 	display:inline-block
 	}
@@ -1129,7 +1145,7 @@ ul.upcoming li .event {
 .clearfloat {
 	display:block
 	}
-	
+
 /* image borders */
 .entry img {
 	-o-box-shadow: 0 0 4px #000;
@@ -1142,7 +1158,7 @@ ul.upcoming li .event {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius:5px;
-}	
+}
 
 .homeEntryBanner, .entryBanner {
 	width: 100%;
@@ -1156,31 +1172,31 @@ ul.upcoming li .event {
 	-moz-border-radius: none;
 	-webkit-border-radius: none;
 	border-radius:none;
-	
+
 	-moz-box-radius:none;
 	-o-box-shadow: none;
 	-webkit-box-shadow: none;
 	box-shadow:none;
 }
-	
+
 /* Outbound link button */
 a.outboundLink {
 	padding: 1em;
 	background: brown;
 	color: #fff;
 	text-shadow: 1px 1px 0 #000;
-	
+
 	-o-box-shadow: 0 0 4px #000;
 	-moz-box-shadow: 0 0 4px #000;
 	-webkit-box-shadow: 0 0 4px #000;
 	box-shadow: 0 0 4px #000;
 	box-shadow: 0 0 4px rgba(0,0,0,.8);
-	
+
 	-o-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	
+
 	background-color: #dedbab;
 	  background-image: -webkit-gradient(linear, left top, left bottom, from(#dedbab), to(#cfcb9b)); /* Saf4+, Chrome */
 	  background-image: -webkit-linear-gradient(top, #dedbab, #cfcb9b); /* Chrome 10+, Saf5.1+, iOS 5+ */
@@ -1189,15 +1205,15 @@ a.outboundLink {
 	  background-image:      -o-linear-gradient(top, #dedbab, #cfcb9b); /* Opera 11.10+ */
 	  background-image:         linear-gradient(top, #dedbab, #cfcb9b);
 	            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dedbab', EndColorStr='#cfcb9b'); /* IE6-IE9 */
-	
+
 }
 a.outboundLink:hover {
 	background: #000;
 	/* border: 1px solid #d1d1d1; */
-	
+
 	color: #fff;
 	text-shadow: 1px 1px 0 #a1a1a1;
-	
+
 	background-color: #cfcb9b;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#cfcb9b), to(#dedbab)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(top, #cfcb9b, #dedbab); /* Chrome 10+, Saf5.1+, iOS 5+ */
@@ -1210,9 +1226,9 @@ a.outboundLink:hover {
 
 /* YouTube Recent uploads */
 div.item {
-      border-top: solid black 1px;      
-      margin: 10px; 
-      padding: 2px; 
+      border-top: solid black 1px;
+      margin: 10px;
+      padding: 2px;
       width: auto;
       padding-bottom: 20px;
     }
@@ -1220,20 +1236,20 @@ div.item {
       float: left;
       margin-right: 20px;
       padding: 2px;
-      border: solid silver 1px;  
-      font-size: x-small; 
+      border: solid silver 1px;
+      font-size: x-small;
       text-align: center
-    }    
+    }
     span.attr {
-      font-weight: bolder;  
+      font-weight: bolder;
     }
     span.title {
-      font-weight: bolder;  
+      font-weight: bolder;
       font-size: x-large
     }
 /**** Misc. ****/
 
-.forum-discussion { 
+.forum-discussion {
 	border-top:1px solid rgba(0,0,0,.4);
 	border-bottom: 1px solid rgba(0,0,0,.4);
 	background: rgba(0,0,0,.15);
@@ -1325,7 +1341,7 @@ table.fest-table tr:hover {
 }
 
 /** Buttons **/
-.entry p a.ticket_button { 
+.entry p a.ticket_button {
 	display: inline-block;
 	padding:10px 20px;
 	color: white;
@@ -1335,15 +1351,15 @@ table.fest-table tr:hover {
 	height: 46px;
 	line-height: 46px;
 	border-color: #1d692d;
-	
-	-webkit-box-shadow: inset 0 1px 1px #94dda6, 0 1px 2px rgba(0,0,0,0.61); 
+
+	-webkit-box-shadow: inset 0 1px 1px #94dda6, 0 1px 2px rgba(0,0,0,0.61);
 	-moz-box-shadow: inset 0 1px 1px #94dda6, 0 1px 2px rgba(0,0,0,0.61);
-	box-shadow: inset 0 1px 1px #94dda6, 0 1px 2px rgba(0,0,0,0.61); 
-	
-	background: #5dbb73; 
-	background: -moz-linear-gradient(top, #5dbb73 0%, #2d9047 100%); 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5dbb73), color-stop(100%,#2d9047)); 
-	background: -webkit-linear-gradient(top, #5dbb73 0%,#2d9047 100%); 
+	box-shadow: inset 0 1px 1px #94dda6, 0 1px 2px rgba(0,0,0,0.61);
+
+	background: #5dbb73;
+	background: -moz-linear-gradient(top, #5dbb73 0%, #2d9047 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5dbb73), color-stop(100%,#2d9047));
+	background: -webkit-linear-gradient(top, #5dbb73 0%,#2d9047 100%);
 	background: -o-linear-gradient(top, #5dbb73 0%,#2d9047 100%);
 	background: -ms-linear-gradient(top, #5dbb73 0%,#2d9047 100%);
 	background: linear-gradient(top, #5dbb73 0%,#2d9047 100%);
@@ -1355,11 +1371,11 @@ table.fest-table tr:hover {
 	-webkit-transition: .5s ease all;
 	transition: .5s ease all;
 	}
-	
+
 .entry a.ticket_button:hover, .entry a.ticket_button:active {
 	background: #68ce80; /* Old browsers */
 	background: -moz-linear-gradient(top, #68ce80 0%, #3cae5a 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68ce80), color-stop(100%,#3cae5a)); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68ce80), color-stop(100%,#3cae5a));
 	background: -webkit-linear-gradient(top, #68ce80 0%,#3cae5a 100%);
 	background: -o-linear-gradient(top, #68ce80 0%,#3cae5a 100%);
 	background: -ms-linear-gradient(top, #68ce80 0%,#3cae5a 100%);
