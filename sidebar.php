@@ -4,9 +4,12 @@
  * @subpackage Templates
  */
 ?>
-<aside id="sidebar" class="sidebar sidebar--test">
-<?php if (!is_404()) {include 'sidebar-search.php';} ?>
+<aside id="sidebar" class="sidebar">
+	<div class="position-sticky">
+<?php if (!is_404()) {include('includes/sidebar-search.php');} ?>
 
+	<ul class="" style="margin:0;padding:0;list-style:none;">
+		<li>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()): ?>
 			<?php if (is_404() || is_category() || is_day() || is_month() ||
     is_year() || is_search() || is_paged()) {
@@ -38,10 +41,11 @@
 			<?php }?>
 
 			<?php }?>
-
+		</li>
 			<?php wp_list_pages('title_li=<h2>Pages</h2>');?>
 
 			<h2>Archives</h2>
 				<?php wp_get_archives('type=monthly');?>
 			<?php endif;?>
+	</div>
 </aside>

@@ -42,7 +42,7 @@
 
   <button class="menu-toggle" aria-label="Mobile Navigation Toggle" tabindex="0" aria-label="Click to toggle mobile site navigation" aria-controls="global_nav">&nbsp;</button>
 
-  <nav id="global_nav" class="main-nav">
+  <nav id="global_nav" class="main-nav" aria-label="Main Nav">
     <?php echo wp_nav_menu('primary', 'main-nav', 'main-nav', 'ul'); ?>
   </nav>
 </header>

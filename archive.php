@@ -35,7 +35,7 @@ get_header();
  	  <?php }?>
 
 		<?php while (have_posts()): the_post();?>
-			<div <?php post_class()?>>
+			<article <?php post_class()?>>
 
 			<div class="archive__post-date">
 				<time><?php the_time('M jS') ?> <span><?php the_time('Y') ?></span></time>
@@ -46,9 +46,9 @@ get_header();
 				<?php
 				$image = get_the_post_thumbnail_url( $post->ID, $size = 'post-thumbnail' );
 				?>
-				<img src="<?= $image; ?>" alt="Featured Image for <?= the_title(); ?>" height="150" width="150" class="archive__post-image">
+				<img src="<?= $image; ?>" alt="Featured Image for <?= the_title(); ?>" height="350" width="350" class="archive__post-image">
 				<?php else: ?>
-					<img src="https://loremflickr.com/150/150" alt="Featured Image for <?= the_title(); ?>" height="150" width="150" class="archive__post-image">
+					<img src="https://loremflickr.com/350/350" alt="Featured Image for <?= the_title(); ?>" height="350" width="350" class="archive__post-image">
 			<?php endif;?>
 			</div>
 
@@ -63,11 +63,10 @@ get_header();
 					</div>
 				</div>
 
-				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />');?> Posted in <?php the_category(', ')?> | <?php edit_post_link('Edit', '', ' ');?>
-				<?php //comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;');?></p>
+				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />');?> Posted in <?php the_category(', ')?>
 
 				</div>
-			</div><!-- .post -->
+				</article><!-- .post -->
 
 		<?php endwhile;?>
 
@@ -90,7 +89,7 @@ endif;
 ?>
 	</div>
 	<div class="archive-sidebar">
-		<?php get_sidebar('Archive Sidebar'); ?>
+		<?php get_sidebar('archive'); ?>
 	</div>
 </main>
 
