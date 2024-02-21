@@ -1,6 +1,6 @@
 <?php
 /**
- * @package WordPress
+ * @package LHXC
  * @subpackage Default_Theme
  */
 ?>

@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bryan V. -- designer/developer --
+
+# THANKS
+
+    The City of Louisville & everyone that has been a punk there
+
+# TECHNOLOGY COLOPHON
+
+    CSS, HTML5
