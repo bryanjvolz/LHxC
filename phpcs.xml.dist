@@ -89,19 +89,10 @@
 		<properties>
 			<property name="text_domain" type="array">
 				<element value="-"/>
-				<element value="library-textdomain"/>
+				<element value="LHXC"/>
 			</property>
 		</properties>
 	</rule>
-
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
-		<properties>
-			<property name="prefixes" type="array">
-				<element value="_"/>
-			</property>
-		</properties>
-	</rule>
-
 
 	<!--
 	#############################################################################

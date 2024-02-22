@@ -1,16 +1,16 @@
 <?php
 /**
+ * Functions manifest for LHXC Theme
+ *
  * @package LHXC
  * @subpackage LHXC
  */
 
-// Globals
+/** Globals */
 require 'functions/globals.php';
-// Admin functions
+/** Admin functions */
 require 'functions/admin.php';
-// Posts
+/** Posts */
 require 'functions/posts.php';
-// Sidebars
+/** Sidebars */
 require 'functions/sidebars.php';
-
-// add_filter( 'jpeg_quality', create_function( '', 'return 90;' ) );

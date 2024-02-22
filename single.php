@@ -1,5 +1,7 @@
 <?php
 /**
+ * Single Post Template
+ *
  * @package LHXC
  * @subpackage Templates
  */
@@ -23,18 +25,18 @@ get_header();
 						<?php
 						if ( get_post_meta( $post->ID, 'BannerFullSizeLink', true ) ) {
 							?>
-						<a href="<?php echo get_post_meta( $post->ID, 'BannerFullSizeLink', true ); ?>"><?php } ?>
+						<a href="<?php get_post_meta( $post->ID, 'BannerFullSizeLink', true ); ?>"><?php } ?>
 								<?php
 								$key     = 'SinglePageBanner';
 								$themeta = get_post_meta( $post->ID, $key, true );
-								if ( $themeta != '' ) {
+								if ( '' !== $themeta ) {
 									?>
 										<img src="
 										<?php
 										$custom_fields   = get_post_custom();
 										$my_custom_field = $custom_fields['SinglePageBanner'];
 										foreach ( $my_custom_field as $key => $value ) {
-											echo $value;
+											echo esc_html( $value );
 										}
 										?>
 							" alt="<?php the_title(); ?>" class="homeEntryBanner">
@@ -72,8 +74,8 @@ get_header();
 			<!-- Related Posts -->
 			<section id="related-posts" class="single-post__related-posts">
 				<?php
-				// Related posts here
-				include 'related-posts.php';
+				/** Related posts here */
+				include 'includes/related-posts.php';
 				?>
 			</section>
 

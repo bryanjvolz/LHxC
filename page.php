@@ -1,5 +1,7 @@
 <?php
 /**
+ * Default page template
+ *
  * @package LHXC
  * @subpackage Default_Theme
  */
@@ -37,12 +39,8 @@ endif;
 		?>
 	<?php edit_post_link( 'Edit this entry.', '<p>', '</p>' ); ?>
 
-	<!-- <?php require 'pagination.php'; ?> -->
-
 </div>
 
-
 </main>
-
 
 <?php get_footer(); ?>

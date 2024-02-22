@@ -1,4 +1,12 @@
-		<div class="widget search-form">
+<?php
+/**
+ * Custom search template - allows switching between
+ *
+ * @package LHXC
+ */
+
+?>
+<div class="widget search-form">
 			<form method="get" id="searchForm" action="http://www.louisvillehardcore.com">
 				<div class="search-form__options">
 					<label for="news">News
@@ -9,7 +17,7 @@
 						name="SearchSelections"
 						value="news"
 						checked="checked"
-						data-action-path="<?php echo get_home_url(); ?>"
+						data-action-path="<?php get_home_url(); ?>"
 						data-action-name="s"
 					></label>
 					<!-- <label>Forums

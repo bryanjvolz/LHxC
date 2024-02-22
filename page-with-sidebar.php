@@ -1,8 +1,9 @@
 <?php
 /**
+ * Template Name: Page With Sidebar
+ *
  * @package LHXC
  * @subpackage Templates
- * Template Name: Page With Sidebar
  */
 
 get_header();?>

@@ -1,7 +1,16 @@
+<?php
+/**
+ *
+ * Related Posts Template
+ *
+ * @package LHXC
+ */
+
+?>
 <div class="related-posts-after-content">
 <?php
-$hasRelated = false;
-$orig_post  = $post;
+$has_related = false;
+$orig_post   = $post;
 global $post;
 $tags = wp_get_post_tags( $post->ID );
 if ( $tags ) {
@@ -16,11 +25,11 @@ if ( $tags ) {
 		'posts_per_page'   => 6, // Number of related posts to display.
 		'caller_get_posts' => 1,
 	);
-	$my_query = new wp_query( $args );
+	$my_query = new WP_Query( $args );
 	if ( $my_query->have_posts() ) {
-		$hasRelated = true; }
+		$has_related = true; }
 
-	if ( $hasRelated ) {
+	if ( $has_related ) {
 		?>
 	<h3>Related Posts</h3>
 
@@ -32,7 +41,7 @@ if ( $tags ) {
 		$my_query->the_post();
 		?>
 
-	<a href="<?php echo the_permalink(); ?>">
+	<a href="<?php the_permalink(); ?>">
 	<figure class="related-thumb card related-post__card card--frosted">
 		<?php the_post_thumbnail() ? the_post_thumbnail( array( 150, 100 ) ) : print( '<img src="https://loremflickr.com/450/175" alt="placeholder image" width="250" height="150" />' ); ?>
 	<figcaption><?php the_title(); ?></figcaption>
@@ -42,10 +51,9 @@ if ( $tags ) {
 		<?php
 	}
 }
-$post = $orig_post;
-wp_reset_query();
+wp_reset_postdata();
 
-if ( $hasRelated ) {
+if ( $has_related ) {
 	?>
 </div>
 <?php } ?>

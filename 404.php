@@ -1,5 +1,7 @@
 <?php
 /**
+ * 404 page template
+ *
  * @package LHXC
  * @subpackage Default_Theme
  */

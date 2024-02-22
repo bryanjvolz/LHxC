@@ -1,3 +1,8 @@
+/**
+ * Main JS file for LHXC
+ *
+ * @param {*} init
+ */
 function ready(init) {
   if (document.readyState !== "loading") {
     init();

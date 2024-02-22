@@ -1,5 +1,7 @@
 <?php
 /**
+ * Search results template for LHXC theme
+ *
  * @package LHXC
  * @subpackage Default_Theme
  */

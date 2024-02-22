@@ -1,14 +1,14 @@
 <?php
 /**
+ * Archives Template
+ *
  * @package LHXC
  * @subpackage Default_Theme
+ *
+ * Template Name: Archives
  */
-/*
-Template Name: Archives
-*/
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <div id="content" class="widecolumn">
 

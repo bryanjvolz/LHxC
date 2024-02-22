@@ -1,5 +1,8 @@
 <?php
 /**
+ *
+ * Template for Shows calendar
+ *
  * @package LHXC
  * @subpackage Default_Theme
  * Template Name: Shows

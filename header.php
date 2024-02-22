@@ -1,8 +1,11 @@
 <?php
 /**
+ * Header template for LHXC Theme
+ *
  * @package LHXC
  * @subpackage Default_Theme
  */
+
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -15,13 +18,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Styles, RSS, Icons -->
-	<?php echo wp_enqueue_style( 'site', get_template_directory_uri() . '/css/site.css', false, '1.1', 'all' ); ?>
+	<?php echo esc_html( wp_enqueue_style( 'site', get_template_directory_uri() . '/css/site.css', false, '1.1', 'all' ) ); ?>
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?> Atom Feed" href="<?php bloginfo( 'atom_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 	<link rel="shortcut icon" href="http://images.louisvillehardcore.com/favicon.ico"/>
 	<link rel="apple-touch-icon" href="http://www.louisvillehardcore.com/iPhoneIcon.ico"/>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<?php wp_enqueue_style( 'google_fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic', array(), gmdate( 'WY' ) ); ?>
 
 <!-- Comments are disallowed, but keep this for trackbacks -->
 <?php
@@ -34,7 +37,7 @@ if ( is_singular() ) {
 <?php wp_head(); ?>
 
 </head>
-<body 
+<body
 <?php
 if ( is_page( '1562' ) ) {
 	print 'class="FB"';
@@ -43,7 +46,7 @@ if ( is_page( '1562' ) ) {
 >
 <div id="page" class="page-wrapper">
 <header id="header" class="main-header">
-	<a href="<?php echo get_option( 'home' ); ?>/">
+	<a href="<?php echo esc_html( get_option( 'home' ) ); ?>/">
 	<img src="http://forums.louisvillehardcore.com/styles/LHXC/imageset/site_logo.gif" alt="Louisville Hardcore" class="site-logo">
 	</a>
 

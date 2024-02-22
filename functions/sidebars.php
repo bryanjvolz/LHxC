@@ -1,6 +1,11 @@
 <?php
+/**
+ * Sidebar and Menu location registration
+ *
+ * @package LHXC
+ */
 
-// Register Sidebars
+/** Register Sidebars */
 if ( function_exists( 'register_sidebars' ) ) {
 	register_sidebars( 3 );
 }
@@ -50,11 +55,11 @@ if ( function_exists( 'register_sidebar' ) ) {
 	);
 }
 
-// Register Menus
+/** Register Menus */
 function register_lhxc_menus() {
-	register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
-	register_nav_menu( 'mobile', __( 'Mobile Menu', 'theme-slug' ) );
-	register_nav_menu( 'footer', __( 'Footer Menu', 'theme-slug' ) );
-	register_nav_menu( 'footer', __( 'Guide Pamphlet Menu', 'theme-slug' ) );
+	register_nav_menu( 'primary', __( 'Primary Menu', 'LHXC' ) );
+	register_nav_menu( 'mobile', __( 'Mobile Menu', 'LHXC' ) );
+	register_nav_menu( 'footer', __( 'Footer Menu', 'LHXC' ) );
+	register_nav_menu( 'footer', __( 'Guide Pamphlet Menu', 'LHXC' ) );
 }
 add_action( 'after_setup_theme', 'register_lhxc_menus' );

@@ -1,5 +1,7 @@
 <?php
 /**
+ * Single Post Sidebar Template
+ *
  * @package LHXC
  * @subpackage Templates
  */

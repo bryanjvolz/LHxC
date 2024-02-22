@@ -21,8 +21,8 @@
         }
     },
     "scripts": {
-      "lint": "phpcs",
-      "fix": "phpcbf",
+      "lint": "phpcs --extensions=php",
+      "fix": "phpcbf --extensions=php",
       "install-codestandards": [
           "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
       ],

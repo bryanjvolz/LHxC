@@ -11,3 +11,5 @@ To install: `composer install`
 To scan: `composer lint`
 To automatically fix: `composer fix`
 
+## Notes
+* Commenting has been removed. Templates will need to be re-added in the future to reintroduce feature

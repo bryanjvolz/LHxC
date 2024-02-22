@@ -1,8 +1,11 @@
 <?php
 /**
+ * Hardcore Punk Guide to Christianity template
+ *
  * @package LHXC
  * @subpackage Templates
  */
+
 /**
 Template Name: LHXC/P Guide
  */

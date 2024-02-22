@@ -1,5 +1,7 @@
 <?php
 /**
+ * Hardcore Punk Guide to Christianity Sidebar Template
+ *
  * @package LHXC
  * @subpackage Templates
  */

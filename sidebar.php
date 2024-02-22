@@ -1,8 +1,11 @@
 <?php
 /**
+ * Default Sidebar Template
+ *
  * @package LHXC
  * @subpackage Templates
  */
+
 ?>
 <aside id="sidebar" class="sidebar">
 	<div class="position-sticky">
@@ -39,7 +42,7 @@ if ( ! is_404() ) {
 			<p>You have searched the <a href="<?php echo bloginfo( 'url' ); ?>/"><?php echo bloginfo( 'name' ); ?></a> blog archives
 			for <strong>'<?php the_search_query(); ?>'</strong>. If you are unable to find anything in these search results, you can try one of these links.</p>
 
-			<?php /* If this is a monthly archive */} elseif ( isset( $_GET['paged'] ) && ! empty( $_GET['paged'] ) ) { ?>
+			<?php /* If this is a monthly archive */} elseif  ( isset( $_GET['paged'] ) && ! empty( $_GET['paged'] ) ) { // phpcs:ignore ?>
 			<p>You are currently browsing the <a href="<?php echo bloginfo( 'url' ); ?>/"><?php echo bloginfo( 'name' ); ?></a> blog archives.</p>
 
 			<?php } ?>
