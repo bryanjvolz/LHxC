@@ -4,13 +4,13 @@
  * @subpackage LHXC
  */
 
-//Globals
-include('functions/globals.php');
-//Admin functions
-include('functions/admin.php');
-//Posts
-include('functions/posts.php');
-//Sidebars
-include('functions/sidebars.php');
+// Globals
+require 'functions/globals.php';
+// Admin functions
+require 'functions/admin.php';
+// Posts
+require 'functions/posts.php';
+// Sidebars
+require 'functions/sidebars.php';
 
 // add_filter( 'jpeg_quality', create_function( '', 'return 90;' ) );

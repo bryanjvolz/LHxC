@@ -1,4 +1,4 @@
-	  <div class="widget search-form">
+		<div class="widget search-form">
 			<form method="get" id="searchForm" action="http://www.louisvillehardcore.com">
 				<div class="search-form__options">
 					<label for="news">News
@@ -9,7 +9,7 @@
 						name="SearchSelections"
 						value="news"
 						checked="checked"
-						data-action-path="<?=get_home_url();?>"
+						data-action-path="<?php echo get_home_url(); ?>"
 						data-action-name="s"
 					></label>
 					<!-- <label>Forums
@@ -31,4 +31,4 @@
 					<input type="submit" value="Search" class="submitButton" id="searchsubmit">
 				</div>
 			</form>
-	  </div>
+		</div>

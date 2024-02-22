@@ -4,6 +4,4 @@
  * @subpackage Templates
  */
 
-  dynamic_sidebar('Single Post Sidebar');
-
-?>
+	dynamic_sidebar( 'Single Post Sidebar' );

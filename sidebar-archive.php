@@ -4,6 +4,4 @@
  * @subpackage Templates
  */
 
-  dynamic_sidebar('Archive Sidebar');
-
-?>
+	dynamic_sidebar( 'Archive Sidebar' );

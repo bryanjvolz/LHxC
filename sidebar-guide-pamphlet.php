@@ -4,6 +4,4 @@
  * @subpackage Templates
  */
 
-  dynamic_sidebar('Guide Pamphlet Sidebar');
-
-?>
+	dynamic_sidebar( 'Guide Pamphlet Sidebar' );

@@ -8,30 +8,33 @@ get_header(); ?>
 
 	<div id="content" class="narrowcolumn">
 
-	<?php if (have_posts()) : ?>
+	<?php if ( have_posts() ) : ?>
 
 		<h2 class="pagetitle">Search Results</h2>
 
 		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
-			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
+			<div class="alignleft"><?php previous_post_link( '&laquo; %link' ); ?></div>
+			<div class="alignright"><?php next_post_link( '%link &raquo;' ); ?></div>
 		</div>
 
 
-		<?php while (have_posts()) : the_post(); ?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+			?>
 
-			<div <?php post_class() ?>>
-				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<small><?php the_time('l, F jS, Y') ?></small>
+			<div <?php post_class(); ?>>
+				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+				<small><?php the_time( 'l, F jS, Y' ); ?></small>
 
-				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+				<p class="postmetadata"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> Posted in <?php the_category( ', ' ); ?> | <?php edit_post_link( 'Edit', '', ' | ' ); ?>  <?php comments_popup_link( 'No Comments &#187;', '1 Comment &#187;', '% Comments &#187;' ); ?></p>
 			</div>
 
 		<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
-			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
+			<div class="alignleft"><?php previous_post_link( '&laquo; %link' ); ?></div>
+			<div class="alignright"><?php next_post_link( '%link &raquo;' ); ?></div>
 			<div class="clear" /></div>
 		</div>
 

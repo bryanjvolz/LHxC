@@ -1,26 +1,26 @@
 <div class="position-sticky">
-  <div class="postmetadata">
-    <?php include('icons/posted-on.php'); ?>
-    <strong>Posted:</strong>
-    <?php the_time('l, F jS, Y')?> at <?php the_time()?> <br>
-    <h2 style="margin-bottom:0;">Categories:</h2> <?php the_category(', ')?>.
-    <br>
-    <?php if (get_post_meta($post->ID, 'twitter_link', true)) {?>
-    <br /> <a href="<?php echo get_post_meta($post->ID, 'twitter_link', true); ?>">This post on Twitter</a><?php } ?>
+	<div class="postmetadata">
+	<?php require 'icons/posted-on.php'; ?>
+	<strong>Posted:</strong>
+	<?php the_time( 'l, F jS, Y' ); ?> at <?php the_time(); ?> <br>
+	<h2 style="margin-bottom:0;">Categories:</h2> <?php the_category( ', ' ); ?>.
+	<br>
+	<?php if ( get_post_meta( $post->ID, 'twitter_link', true ) ) { ?>
+	<br /> <a href="<?php echo get_post_meta( $post->ID, 'twitter_link', true ); ?>">This post on Twitter</a><?php } ?>
 
-    <?php the_tags('<h2>Tags:</h2><ul class="list-inline tag-list"><li>', '</li><li>', '</li></ul>');?>
+	<?php the_tags( '<h2>Tags:</h2><ul class="list-inline tag-list"><li>', '</li><li>', '</li></ul>' ); ?>
 
-    <?php
-      global $post;
-      $author_id = $post->post_author;
-    ?>
+	<?php
+		global $post;
+		$author_id = $post->post_author;
+	?>
 
-    <h2>Posted By:</h2>
-    <div class="single-post__author">
-      <?=get_avatar($author_id, $size = 50);?>
-      <a href="mailto:<?=get_the_author_meta('email', $author_id);?>?Subject=LHxC News"><?=get_the_author_meta('nicename', $author_id);?></a>
-    </div>
-  </div><!-- /postmetadata -->
+	<h2>Posted By:</h2>
+	<div class="single-post__author">
+		<?php echo get_avatar( $author_id, $size = 50 ); ?>
+		<a href="mailto:<?php echo get_the_author_meta( 'email', $author_id ); ?>?Subject=LHxC News"><?php echo get_the_author_meta( 'nicename', $author_id ); ?></a>
+	</div>
+	</div><!-- /postmetadata -->
 
-  <?php get_sidebar('single-post'); ?>
+	<?php get_sidebar( 'single-post' ); ?>
 </div>
