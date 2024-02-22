@@ -1,6 +1,8 @@
 # LHxC
 LHxC
 
+![phpcs](https://github.com/github/typocracy/actions/workflows/main.yml/badge.svg)
+
 Wordpress theme for Louisville Hardcore.com - a Louisville, KY focused music site covering Punk, Hardcore, and Indie Rock of the region.
 
 ## Linting
