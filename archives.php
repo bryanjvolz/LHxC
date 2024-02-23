@@ -1,14 +1,14 @@
 <?php
 /**
- * @package WordPress
+ * Archives Template
+ *
+ * @package LHXC
  * @subpackage Default_Theme
+ *
+ * Template Name: Archives
  */
-/*
-Template Name: Archives
-*/
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <div id="content" class="widecolumn">
 
@@ -16,12 +16,12 @@ Template Name: Archives
 
 <h2>Archives by Month:</h2>
 	<ul>
-		<?php wp_get_archives('type=monthly'); ?>
+		<?php wp_get_archives( 'type=monthly' ); ?>
 	</ul>
 
 <h2>Archives by Subject:</h2>
 	<ul>
-		 <?php wp_list_categories(); ?>
+		<?php wp_list_categories(); ?>
 	</ul>
 
 </div>

@@ -1,0 +1,33 @@
+{
+    "name": "bvolz/lhxc",
+    "description": "LouisvilleHardcore.com Wordpress Theme",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bryan Volz",
+            "email": "bryan@typocracy.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "3.0.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+      "lint": "phpcs --extensions=php",
+      "fix": "phpcbf --extensions=php",
+      "install-codestandards": [
+          "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+      ],
+      "post-install-cmd": [
+          "@install-codestandards"
+      ]
+  }
+}

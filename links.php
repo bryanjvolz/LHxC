@@ -1,6 +1,8 @@
 <?php
 /**
- * @package WordPress
+ *  Old Template for WP Links/Bookmarks
+ *
+ *  @package LHXC
  * @subpackage Default_Theme
  */
 
