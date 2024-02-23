@@ -43,7 +43,7 @@ get_header(); ?>
 											<?php the_content( 'Read the rest of this entry &raquo;' ); ?>
 						</div>
 
-						<p class="postmetadata"><?php the_tags( '<strong class="tag-title">Tags:</strong> ', ' ', '<br />' ); ?> <strong>Posted in:</strong> <?php the_category( ', ' ); ?> | <?php edit_post_link( 'Edit', '', ' | ' ); ?></p>
+						<p class="postmetadata"><?php the_tags( '<strong class="tag-title">Tags:</strong> ', ' ', '<br />' ); ?> <strong>Posted in:</strong> <?php the_category( ', ' ); ?></p>
 					</article>
 
 								<?php endwhile; ?>

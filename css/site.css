@@ -172,8 +172,8 @@ h3 {
 }
 
 small,
-#sidebar ul ul li,
-#sidebar ul ol li,
+.sidebar ul ul li,
+.sidebar ul ol li,
 .nocomments,
 .postmetadata,
 blockquote,
@@ -319,6 +319,8 @@ body {
 	line-height: 2;
 	margin: 1.25em 0 0;
 	padding: 1em 0 0;
+
+  font-size: .75em;
 }
 
 .postmetadata .tag-list li {
@@ -439,8 +441,8 @@ iframe[src*='youtube.com']
 }
 
 /** Single Post **/
-.single-post {
-
+.single-post .entry {
+  padding-bottom: 2em;
 }
 
 .single-post__sidebar {
@@ -452,9 +454,10 @@ iframe[src*='youtube.com']
 	}
 
 	.postmetadata {
-	border-bottom: 1px solid var(--mid-bark);
-	padding-bottom: 1rem;
-	margin-bottom: 1rem;
+    border-bottom: 1px solid var(--mid-bark);
+    font-size: 1em;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 	}
 
 	svg {
@@ -643,6 +646,10 @@ ul.list-inline {
 	}
 }
 
+/** Post - core content area **/
+.entry p a {
+  word-break: break-all;
+}
 
 .entry p a:visited {
 	color: var(--mid-bark);
@@ -666,41 +673,44 @@ ul.list-inline {
 }
 
 /* Sidebar */
+.sidebar {
+  padding-bottom: 2rem;
+}
 
-#sidebar ul,
-#sidebar ul ol {
+.sidebar ul,
+.sidebar ul ol {
 	margin: 0;
 	padding: 0;
 }
 
-#sidebar ul li {
+.sidebar ul li {
 	list-style-type: none;
 	list-style-image: none;
 	margin-bottom: 15px;
 }
 
-#sidebar ul p,
-#sidebar ul select {
+.sidebar ul p,
+.sidebar ul select {
 	margin: 5px 0 8px;
 }
 
-#sidebar ul ul,
-#sidebar ul ol {
+.sidebar ul ul,
+.sidebar ul ol {
 	margin: 5px 0 0 10px;
 }
 
-#sidebar ul ul ul,
-#sidebar ul ol {
+.sidebar ul ul ul,
+.sidebar ul ol {
 	margin: 0 0 0 10px;
 }
 
 ol li,
-#sidebar ul ol li {
+.sidebar ul ol li {
 	list-style: decimal outside;
 }
 
-#sidebar ul ul li,
-#sidebar ul ol li {
+.sidebar ul ul li,
+.sidebar ul ol li {
 	margin: 3px 0 0;
 	padding: 0;
 }
@@ -757,7 +767,7 @@ ol li,
 	position: relative;
 }
 
-#sidebar #searchform #s {
+.sidebar #searchform #s {
 	font-size: 16px;
 	padding: 5px;
 	width: 160px;
@@ -778,7 +788,7 @@ ol li,
 .blog-sidebar {
 	padding-bottom: 2rem;
 }
-#sidebar form {
+.sidebar form {
 	margin: 0;
 }
 
@@ -1530,7 +1540,8 @@ header.main-header {
 	margin-bottom: 2.5rem;
 }
 
-.site-logo {
+/** Old GIF Version **/
+/* .site-logo {
 	margin: 0;
 	max-width: 35vw;
 	position: relative;
@@ -1539,7 +1550,19 @@ header.main-header {
 	@media screen and (max-width: 600px) {
 	max-width: 100%;
 	}
+} */
+
+/** New SVG **/
+.site-logo {
+	margin: 0;
+	position: relative;
+	z-index: var(--mobile-logo-index);
+  height: auto;
+  max-width: 250px;
+  width: 100%;
 }
+
+
 
 .main-nav {
 	opacity: 0;

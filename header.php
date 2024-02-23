@@ -37,17 +37,11 @@ if ( is_singular() ) {
 <?php wp_head(); ?>
 
 </head>
-<body
-<?php
-if ( is_page( '1562' ) ) {
-	print 'class="FB"';
-}
-?>
->
+<body>
 <div id="page" class="page-wrapper">
 <header id="header" class="main-header">
-	<a href="<?php echo esc_html( get_option( 'home' ) ); ?>/">
-	<img src="http://forums.louisvillehardcore.com/styles/LHXC/imageset/site_logo.gif" alt="Louisville Hardcore" class="site-logo">
+	<a href="<?php echo esc_html( get_option( 'home' ) ); ?>/"  aria-label="<?php bloginfo( 'name' ); ?>">
+	<img src="<?php echo esc_html( get_template_directory_uri() ); ?>/images/lhxc-logo.svg" alt="<?php bloginfo( 'name' ); ?>" class="site-logo">
 	</a>
 
 	<button class="menu-toggle" aria-label="Mobile Navigation Toggle" tabindex="0" aria-label="Click to toggle mobile site navigation" aria-controls="global_nav">&nbsp;</button>
