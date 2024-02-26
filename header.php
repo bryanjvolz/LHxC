@@ -22,9 +22,9 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?> Atom Feed" href="<?php bloginfo( 'atom_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
-	<link rel="shortcut icon" href="http://images.louisvillehardcore.com/favicon.ico"/>
-	<link rel="apple-touch-icon" href="http://www.louisvillehardcore.com/iPhoneIcon.ico"/>
-	<?php wp_enqueue_style( 'google_fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic', array(), gmdate( 'WY' ) ); ?>
+	<link rel="shortcut icon" href="https://images.louisvillehardcore.com/favicon.ico"/>
+	<link rel="apple-touch-icon" href="https://www.louisvillehardcore.com/iPhoneIcon.ico"/>
+	<?php wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic', array(), gmdate( 'WY' ) ); ?>
 
 <!-- Comments are disallowed, but keep this for trackbacks -->
 <?php

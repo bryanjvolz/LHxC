@@ -7,7 +7,7 @@
 
 ?>
 <div class="widget search-form">
-			<form method="get" id="searchForm" action="http://www.louisvillehardcore.com">
+			<form method="get" id="searchForm" action="https://www.louisvillehardcore.com">
 				<div class="search-form__options">
 					<label for="news">News
 					<input
