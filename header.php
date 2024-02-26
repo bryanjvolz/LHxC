@@ -24,14 +24,14 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 	<?php wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic', array(), gmdate( 'WY' ) ); ?>
 
-  <!--Favicons, web manifest-->
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/safari-pinned-tab.svg" color="#3c2e23">
-  <meta name="msapplication-TileColor" content="#f3f1e9">
-  <meta name="theme-color" content="#ffffff">
+	<!--Favicons, web manifest-->
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo esc_html( get_template_directory_uri() ); ?>/images/favicons/safari-pinned-tab.svg" color="#3c2e23">
+	<meta name="msapplication-TileColor" content="#f3f1e9">
+	<meta name="theme-color" content="#ffffff">
 
 <!-- Comments are disallowed, but keep this for trackbacks -->
 <?php
