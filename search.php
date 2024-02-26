@@ -8,17 +8,12 @@
 
 get_header(); ?>
 
-	<div id="content" class="narrowcolumn">
+<div id="content" class="content search-results">
+	<main>
+	<h1 class="pagetitle">Search Results</h1>
+
 
 	<?php if ( have_posts() ) : ?>
-
-		<h2 class="pagetitle">Search Results</h2>
-
-		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link( '&laquo; %link' ); ?></div>
-			<div class="alignright"><?php next_post_link( '%link &raquo;' ); ?></div>
-		</div>
-
 
 		<?php
 		while ( have_posts() ) :
@@ -34,11 +29,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link( '&laquo; %link' ); ?></div>
-			<div class="alignright"><?php next_post_link( '%link &raquo;' ); ?></div>
-			<div class="clear" /></div>
-		</div>
+		<?php include 'includes/pagination.php'; ?>
 
 	<?php else : ?>
 
@@ -47,8 +38,10 @@ get_header(); ?>
 
 	<?php endif; ?>
 
+	</main>
+	<aside id="sidebar" class="sidebar search-result-sidebar">
 	<?php get_sidebar(); ?>
-
+	</aside>
 
 	</div>
 
