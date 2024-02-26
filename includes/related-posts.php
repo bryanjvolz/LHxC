@@ -41,9 +41,17 @@ if ( $tags ) {
 		$my_query->the_post();
 		?>
 
+
 	<a href="<?php the_permalink(); ?>">
 	<figure class="related-thumb card related-post__card card--frosted">
-		<?php the_post_thumbnail() ? the_post_thumbnail( array( 150, 100 ) ) : print( '<img src="https://loremflickr.com/450/175" alt="placeholder image" width="250" height="150" />' ); ?>
+		<?php
+		$post_thumb = get_the_post_thumbnail();
+		if ( ! empty( $post_thumb ) ) {
+			the_post_thumbnail();
+		} else {
+			?>
+			<img src="<?php echo esc_html( get_default_feature_image() ); ?>" alt="placeholder image" width="250" height="150" />
+		<?php } ?>
 	<figcaption><?php the_title(); ?></figcaption>
 	</figure>
 	</a>
