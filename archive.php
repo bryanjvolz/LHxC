@@ -46,14 +46,15 @@ get_header();
 			</div>
 
 			<div class="archive__post-thumb">
-				<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
-					<?php
+				<?php
+				$post_thumb = get_the_post_thumbnail();
+				if ( ! empty( $post_thumb ) ) {
 					$image = get_the_post_thumbnail_url( $post->ID, $size = 'post-thumbnail' );
-					?>
-				<img src="<?php echo esc_html( $image ); ?>" alt="Featured Image for <?php esc_html( the_title() ); ?>" height="350" width="350" class="archive__post-image">
-				<?php else : ?>
-					<img src="https://loremflickr.com/350/350" alt="Featured Image for <?php esc_html( the_title() ); ?>" height="350" width="350" class="archive__post-image">
-			<?php endif; ?>
+				} else {
+					$image = get_default_feature_image();
+				}
+				?>
+			<img src="<?php echo esc_html( $image ); ?>" alt="Featured Image for <?php esc_html( the_title() ); ?>" height="350" width="350" class="archive__post-image">
 			</div>
 
 			<div class="archive__post-info">

@@ -1,15 +1,16 @@
 /*
 Theme Name: Louisville Hardcore
-Theme URI: http://www.louisvillehardcore.com/
+Theme URI: https://www.louisvillehardcore.com/
 Description: Main styles for Louisville Hardcore, updated 2023
 Version: 1.5
 Author: Bryan Volz
-Author URI: http://www.typocracy.net/
+Author URI: https://www.typocracy.net/
 
 */
 
 :root {
-	--alabaster: #f4f1e8;
+  --page-bg: #f3f1e9;
+	--alabaster: var(--page-bg);
 	--chamoisee: #a57f60;
 	--bark: #3c2e23;
 	--mid-bark: #776043;
@@ -54,8 +55,7 @@ html, body {
 }
 
 body {
-	background: #f3f1e9 url("https://louisvillehardcore.com/test/img/newBG.jpg")
-	repeat-x top left;
+	background: var(--page-bg) url("../images/page-bg-min.webp") repeat-x top left;
 	color: var(--text-color);
 	font-family: var(--font-stack);
 }
@@ -69,12 +69,6 @@ img {
 	shape-margin: 1rem;
 	vertical-align: middle;
 }
-
-
-
-
-
-
 
 /** Navigation **/
 .sub-menu {
@@ -289,6 +283,7 @@ body {
 }
 
 .post hr {
+  clear: both;
 	display: block;
 }
 
@@ -1141,136 +1136,6 @@ span.calnk {
 	font-size: 12px;
 }
 
-/* New homepage */
-#lead {
-	width: 600px;
-	margin: 22px 0;
-	background: #dfebda
-	url(/wp-content/themes/LHXC_Default/images/defaultLeadBg.jpg) no-repeat top
-	left;
-	-moz-border-radius: 5px;
-	-moz-border-radius: 5px;
-	height: 261px;
-}
-
-.TapeTopLeft {
-	height: 45px;
-	width: 55px;
-	position: absolute;
-	z-index: 5000;
-	margin: -12px 0 0 -595px;
-}
-
-.TapeTopRight {
-	height: 45px;
-	margin: -12px 0 0 -20px;
-	position: absolute;
-	width: 55px;
-}
-
-.TapeBotLeft {
-	height: 45px;
-	margin: 225px 0 0 -595px;
-	position: absolute;
-	width: 55px;
-}
-
-.TapeBotRight {
-	height: 45px;
-	margin: 225px 0 0 -23px;
-	position: absolute;
-	width: 55px;
-}
-
-#leadLeft {
-	border-right: 1px solid #fff;
-	float: left;
-	height: 225px;
-	margin: 15px 0 0 0;
-	padding: 0 15px 10px 15px;
-	position: relative;
-	width: 130px;
-}
-
-#lead-text {
-	border-left: 1px solid #a09d92;
-	float: left;
-	height: 225px;
-	margin: 15px 0 0 0;
-	padding: 0px 15px 8px 15px;
-	width: 390px;
-}
-#lead-text h2 {
-	padding: 0;
-	margin: 0 0 10px 0;
-}
-
-#lead br,
-.recent-excerpts br {
-	margin-bottom: 15px;
-}
-
-#lead img {
-	float: left;
-	margin-right: 22px;
-}
-
-#leadLinks {
-	border-top: 1px solid #fff;
-	margin: 1em 0 5px 0px;
-}
-
-#featured-cats {
-	float: left;
-	position: relative;
-	width: 150px;
-}
-
-#more-posts {
-	float: right;
-	position: relative;
-	width: 370px;
-}
-
-#featured-cats h3,
-#more-posts h3 {
-	margin: 0 0 15px 0;
-}
-#more-posts img,
-.archive-list a img,
-.archive-list a:visited img {
-	float: left;
-	margin: 4px 18px 8px 0;
-	border: 1px solid #b9b9b9;
-	padding: 2px;
-}
-#more-posts img {
-	margin: 3px 12px 4px 0;
-}
-
-.recent-excerpts {
-	border-bottom: 1px solid #cbcbca;
-}
-
-.home_meta {
-	border-top: 1px dotted #996;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 0.8em;
-}
-
-#featured-cats .post_date {
-	margin: 2px 3px 0 0;
-	border-right: 1px solid #cbcbca;
-}
-
-#featured-cats ul {
-	margin: 0 0 0 5px;
-	padding: 0;
-}
-
-#featured-cats ul li {
-	border-bottom: 1px solid #888;
-}
 /* ---------- @ Float Clearing -----------*/
 
 .clearfloat:after {
@@ -1603,7 +1468,7 @@ header.main-header {
 		height: calc(100lvh);
 		justify-content: start;
 		padding: 0 1em;
-		background: rgba(0, 0, 0, 0.95) url("../images/tapes-nav-bg.png")
+		background: rgba(0, 0, 0, 0.95) url("../images/tapes-nav-bg-min.webp")
 		center bottom no-repeat;
 		background-size: cover;
 		display: flex;
@@ -1798,7 +1663,7 @@ body.active-mobile-nav {
 
 /** Main Footer **/
 .main-footer {
-	background: #000 url('../images/2024-footer-bg.jpg') top center repeat-x;
+	background: #000 url('../images/2024-footer-bg-min.webp') top center repeat-x;
 	border: none;
 	box-shadow: 0 0 0.5em 0.15em rgba(0, 0, 0, 0.4);
 	color: var(--alabaster);
