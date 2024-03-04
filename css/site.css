@@ -246,6 +246,10 @@ body {
 	}
 }
 
+.content--no-sidebar {
+  display: block;
+}
+
 /** Posts **/
 
 .post {
@@ -280,6 +284,10 @@ body {
 	}
 	}
 
+}
+
+.post--wide {
+  padding: 0;
 }
 
 .post hr {
