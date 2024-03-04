@@ -42,11 +42,8 @@ add_action( 'save_post', 'lhxc_default_featured_image' );
  * Set a default feature image
  */
 function set_default_featured_image_for_existing_posts() {
-	/** Replace 'your_default_image_url' with the URL of your default featured image */
-	$default_image_url = 'https://www.louisvillehardcore.com/wp-content/uploads/2024/02/52986395372_1f08e95b33_c.jpg';
-
 	/** Get the attachment ID of the default image */
-	$default_image_id = attachment_url_to_postid( $default_image_url );
+	$default_image_id = attachment_url_to_postid( get_default_feature_image() );
 
 	/** Query to retrieve posts and pages that do not have a featured image set */
 	$args = array(
