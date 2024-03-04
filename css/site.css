@@ -687,9 +687,10 @@ ul.list-inline {
 }
 
 .sidebar ul li {
-	list-style-type: none;
 	list-style-image: none;
+	list-style-type: none;
 	margin-bottom: 15px;
+  clear:both;
 }
 
 .sidebar ul p,
