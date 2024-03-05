@@ -19,7 +19,7 @@
 	<a id="scrolltop" href="#top" class="top-link">Back To Top</a>
 </footer>
 
-	<?php wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/js/main.js', '', gmdate( 'WY' ), 'async' ); ?>
+	<?php wp_enqueue_script( 'lhxc-js', get_stylesheet_directory_uri() . '/js/main.js', '', gmdate( 'WY' ), 'async' ); ?>
 
 	<?php wp_footer(); ?>
 	</body>

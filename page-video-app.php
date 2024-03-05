@@ -1,6 +1,6 @@
 <?php
 /**
- *  * Template Name: Full Width Page
+ *  * Template Name: Video Page
  *
  * @package LHXC
  * @subpackage Default_Theme
@@ -40,6 +40,13 @@ endif;
 	<?php edit_post_link( 'Edit this entry.', '<p>', '</p>' ); ?>
 
 </div><!-- /.page-main-content -->
+
+<!-- React Video App -->
+
+	<?php wp_enqueue_script( 'video-app-js', get_stylesheet_directory_uri() . '/js/video/assets/index-CePl4SR9.js', '', gmdate( 'WY' ), 'async' ); ?>
+
+
+	<div id="root"></div>
 
 </main>
 

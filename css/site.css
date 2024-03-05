@@ -384,6 +384,17 @@ iframe[src*='youtube.com']
 	}
 }
 
+/** Post Block Styles **/
+.block-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto 1rem;
+  padding: 2.5%;
+
+  @media (width > 650px){
+    padding: 0;
+  }
+}
+
 /** Post Pagination at bottom **/
 .wp-pagination {
 	margin: 1rem 0;
