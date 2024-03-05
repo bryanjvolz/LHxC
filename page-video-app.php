@@ -43,10 +43,10 @@ endif;
 
 <!-- React Video App -->
 
-    <?php wp_enqueue_script( 'video-app-js', get_stylesheet_directory_uri() . '/js/video/assets/index-CePl4SR9.js', '', gmdate( 'WY' ), 'async' ); ?>
+	<?php wp_enqueue_script( 'video-app-js', get_stylesheet_directory_uri() . '/js/video/assets/index-CePl4SR9.js', '', gmdate( 'WY' ), 'async' ); ?>
 
 
-  <div id="root"></div>
+	<div id="root"></div>
 
 </main>
 
