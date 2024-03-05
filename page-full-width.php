@@ -18,7 +18,6 @@ get_header();?>
 				the_post();
 				?>
 						<div class="post post--wide" id="post-<?php the_ID(); ?>">
-							<h1><?php the_title(); ?></h1>
 								<div class="entry">
 									<?php the_content( '<p class="serif">Read the rest of this page &raquo;</p>' ); ?>
 
