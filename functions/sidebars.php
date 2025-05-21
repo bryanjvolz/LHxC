@@ -12,6 +12,7 @@ if ( function_exists( 'register_sidebars' ) ) {
 if ( function_exists( 'register_sidebar' ) ) {
 	register_sidebar(
 		array(
+			'id'            => 'default-sidebar',
 			'name'          => 'Default Sidebar',
 			'description'   => 'Default Sidebar',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -23,6 +24,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 
 	register_sidebar(
 		array(
+			'id'            => 'guide-pamphlet-sidebar',
 			'name'          => 'Guide Pamphlet Sidebar',
 			'description'   => 'Guide Pamphlet Sidebar',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -34,6 +36,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 
 	register_sidebar(
 		array(
+			'id'            => 'archive-sidebar',
 			'name'          => 'Archive Sidebar',
 			'description'   => 'Archive Sidebar',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -45,6 +48,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 
 	register_sidebar(
 		array(
+			'id'            => 'single-post-sidebar',
 			'name'          => 'Single Post Sidebar',
 			'description'   => 'Single Post Sidebar',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
