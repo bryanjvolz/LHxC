@@ -5,11 +5,8 @@
  * @package LHXC
  */
 
-/** Add thumbnails - Paste this where you wanna use it - the_post_thumbnail(); */
-add_theme_support( 'post-thumbnails' );
-
 /**
- * Add odd or even post classes to the post for zebra striping.
+ * Add odd or even post classes to the post for zebra striping
  *
  * @param array $classes Class names.
  */

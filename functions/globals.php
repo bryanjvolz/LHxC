@@ -37,3 +37,13 @@ add_filter( 'xmlrpc_enabled', '__return_false' );
 function get_default_feature_image() {
 	return 'https://www.louisvillehardcore.com/wp-content/uploads/2024/02/default-2024-feature-image.jpg';
 }
+
+/** Set up theme with options
+ *
+ * @return void
+ */
+function lhxc_setup_theme() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 300, 300, true ); // 50 pixels wide by 50 pixels tall, crop mode
+}
+add_action( 'after_setup_theme', 'lhxc_setup_theme' );
