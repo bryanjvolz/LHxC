@@ -4,3 +4,4 @@ _notes/
 PSDs/
 error_log
 /vendor/
+.env
