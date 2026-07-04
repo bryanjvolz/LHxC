@@ -108,10 +108,10 @@ get_header(); ?>
         }
       </style>
     </section>
-    <section id="history_recent-edits">
+    <!--<section id="history_recent-edits">
         <h2>Recent Edits</h2>
-        <?php include 'includes/history-recent-edits.php'; ?>
-    </section>
+        <?php //include 'includes/history-recent-edits.php'; ?>
+    </section>-->
   </main>
 
   <?php get_sidebar(); ?>
